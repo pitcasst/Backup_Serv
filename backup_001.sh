@@ -542,11 +542,12 @@ DIR_RESP_HOST=/opt/respaldo/
 
 # COPIADO REMOTO DE LOS RESPALDOS POR GDRIVE
 
-DIR_GDRIVE=0BzZ2P7NozQQtR3RodERHSzVtaEk
+DIR_GDRIVE=15FrefiZZaf7S_1tFkKl-G8bOxJ7tJD1S
 
 #cd $DIR_RESP_HOST
 
 gdrive upload --recursive --parent $DIR_GDRIVE $DIR_RESP_HOST/$NOM_HOST-$IP_ETH0_HOST
+
  
 
  
@@ -566,7 +567,7 @@ gdrive upload --recursive --parent $DIR_GDRIVE $DIR_RESP_HOST/$NOM_HOST-$IP_ETH0
  
 
  
-echo "Respaldo Ejecutado" ; echo "" ; cat auditoria_tecnica_$FEC_INI.txt | mail -s "Notificación de Ejecución de Respaldo y Auditoria Programada" pcastillo@conessis.com.mx
+## echo "Respaldo Ejecutado" ; echo "" ; cat auditoria_tecnica_$FEC_INI.txt | mail -s "Notificación de Ejecución de Respaldo y Auditoria Programada" pcastillo@conessis.com.mx
  
 # Ejecutar correo de notificación de realización de respaldos.
  
